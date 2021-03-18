@@ -290,7 +290,7 @@ int main(int argc, char* argv[])
   bool res = false;
 
   //do pre_download if needed
-  if (!command_line::has_arg(vm, command_line::arg_no_predownload) || command_line::has_arg(vm, command_line::arg_force_predownload))
+  if (false)
   {
     auto is_stop_signal_sent = [&p2psrv]() -> bool {
       return static_cast<nodetool::i_p2p_endpoint<currency::t_currency_protocol_handler<currency::core>::connection_context>*>(&p2psrv)->is_stop_signal_sent();

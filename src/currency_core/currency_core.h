@@ -29,6 +29,7 @@ namespace currency
   struct i_blockchain_update_listener
   {
     virtual void on_blockchain_update() = 0;
+
   };
 
 
